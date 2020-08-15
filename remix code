@@ -1,0 +1,19 @@
+pragma solidity ^ 0.4.17 < 0.6.12;
+contract employee{
+    string name;
+    uint age;
+    string post ;
+    uint id;
+    
+    function employee(string newname, uint newage, string newpost, uint newid)public{
+    name = newname;
+    age = newage;
+    post = newpost;
+    id = newid;
+    }
+    function getdetails() public view returns(string,uint,string,uint){
+        return(name , age , post , id);
+    }
+    
+    
+}
